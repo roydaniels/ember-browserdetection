@@ -1,0 +1,38 @@
+{
+  "name": "ember-browserdetection",
+  "bpm": "1.0.0",
+  "version": "2.0.beta.1",
+  "description":  "Port of the Sproutcore 1.7 browser detection to Sproutcore 2.0",
+  "author": "Strobe Inc., Apple, Inc., Thomas Bartelmess and contributors",
+  "homepage": "http://www.sproutcore.com",
+  "summary": "Browser detection helpers",
+
+  "files": {
+    "lib": []
+  },
+
+  "dependencies:development": {
+    "spade-qunit": "~> 1.0.0"
+  },
+  "dependencies": {
+    "ember-runtime": ">= 0",
+    "spade": ">= 0"
+  },
+
+  "bpm:build": {
+    "bpm_libs.js": {
+      "files": [
+        "lib"
+      ],
+      "minifier": "uglify-js"
+    },
+    "ember-browserdetection/bpm_tests.js": {
+      "files": [
+        "tests"
+      ],
+      "modes": [
+        "debug"
+      ]
+    }
+  }
+}
